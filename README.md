@@ -4,6 +4,9 @@ Version 0.1.0
 
 A Force-Directed algorithm that respects edge-crossings
 
+Source:
+https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.
+
 
 ## Project organization
 
