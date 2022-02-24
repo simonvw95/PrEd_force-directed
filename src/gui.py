@@ -13,6 +13,7 @@ class App:
     def __init__(self):
         self.root = tk.Tk()
         
+        # set up some base values for the algorithm
         self.base_values = {'n' : 10, 'delta' : 100, 'gamma' : 10, 'iterations' : 100}
         self.stop_loop = False
         self.dpi = 96
