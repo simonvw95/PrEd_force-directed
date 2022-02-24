@@ -8,6 +8,26 @@ Source:
 https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.
 
 
+## Installing dependencies
+In a terminal with pip installed run the following command to create a virtual environment
+python -m venv [name_of_virtual_env_without_brackets]
+
+Then in the same terminal activate the virtual environment
+
+For Mac OS / Linux:
+source [name_of_virtual_env_without_brackets]/bin/activate
+
+For Windows
+[name_of_virtual_env_without_brackets]\Scripts\activate
+
+Then install the dependencies needed to run the scripts
+pip install -r requirements.txt
+
+## Using the GUI
+In a terminal with the activated virtual environment (with the installed dependencies) write:
+
+python gui.py
+
 ## Project organization
 
 ```
