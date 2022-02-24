@@ -28,6 +28,8 @@ In a terminal with the activated virtual environment (with the installed depende
 
 `python gui.py`
 
+If the program does not terminate after quitting the Quit Program button then exit the terminal and start it again.
+
 ## Project organization
 
 ```
