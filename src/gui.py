@@ -13,9 +13,9 @@ class App:
 
     def __init__(self):
 
-        self.root = tk.Tk()
 
         # set up some base values for the algorithm
+        self.root = tk.Tk()
         self.base_values = {'n' : 10, 'delta' : 100, 'gamma' : 10, 'iterations' : 100}
         self.stop_loop = False
         self.dpi = 96
@@ -50,16 +50,27 @@ class App:
         self.root.focus()
         try:
             value = int(text)
+            if value <= 0:
+                raise ValueError('Pick an integer value larger than 0')
             if ident == 'n':
+                if value > 100:
+                    raise ValueError('Try picking a value lower than 100')
                 self.base_values['n'] = value
-            if ident == 'delta':
+            elif ident == 'delta':
+                if value > 300:
+                    raise ValueError('Try picking a value lower than 300')
                 self.base_values['delta'] = value
-            if ident == 'gamma':
+            elif ident == 'gamma':
+                if value > 100:
+                    raise ValueError('Try picking a value lower than 100')
                 self.base_values['gamma'] = value
-            if ident == 'iterations':
+            elif ident == 'iterations':
+                if value > 10000:
+                    raise ValueError('Try picking a value lower than 10000')
                 self.base_values['iterations'] = value
         except Exception as exc:
             print(exc)
+            print('An integer input is expected')
 
     # function for displaying a node-link graph
     def display(self, pos, iteration = None, node = None):
@@ -208,6 +219,7 @@ class App:
         self.display(temp_pos, iteration, curr_key)
 
 
+# TODO: find a better way to use the functions for the creation of buttons/labels/entries/text etc.
 def main(app_info):
 
     # code lines are ordered in appearance in the gui
