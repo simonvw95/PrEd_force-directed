@@ -28,6 +28,7 @@ In a terminal with the activated virtual environment (with the installed depende
 
 `python gui.py`
 
+The gui input parameters are required to be non-negative integers, exceptions will be thrown when this is not the case.
 If the program does not terminate after quitting the Quit Program button then exit the terminal and start it again.
 
 ## Project organization
