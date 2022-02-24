@@ -10,23 +10,23 @@ https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=
 
 ## Installing dependencies
 In a terminal with pip installed run the following command to create a virtual environment
-python -m venv [name_of_virtual_env_without_brackets]
+`python -m venv [name_of_virtual_env_without_brackets]`
 
 Then in the same terminal activate the virtual environment
 
 For Mac OS / Linux:
-source [name_of_virtual_env_without_brackets]/bin/activate
+`source [name_of_virtual_env_without_brackets]/bin/activate`
 
 For Windows
-[name_of_virtual_env_without_brackets]\Scripts\activate
+`[name_of_virtual_env_without_brackets]\Scripts\activate`
 
 Then install the dependencies needed to run the scripts
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Using the GUI
 In a terminal with the activated virtual environment (with the installed dependencies) write:
 
-python gui.py
+`python gui.py`
 
 ## Project organization
 
