@@ -4,8 +4,6 @@ The purpose of the PrEd algorithm is to adjust/improve the layout of existing gr
 
 The use of this project is to view the inner workings of the PrEd algorithm with the help of a Graphical User Interface (GUI), where users can visibly see the changes in the layout and manually go back through multiple iterations.
 
-
-Inline-style: 
 ![alt text](https://github.com/simonvw95/PrEd_force-directed/blob/master/results/figures/gui_example.png "GUI example")
 
 [PrEd algorithm source](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.)
