@@ -6,7 +6,8 @@ The use of this project is to view the inner workings of the PrEd algorithm with
 
 ![alt text](https://github.com/simonvw95/PrEd_force-directed/blob/master/results/figures/gui_example.png "GUI example")
 
-[Interactive code via binder](https://mybinder.org/v2/gh/simonvw95/PrEd_force-directed/master)
+The Binder page does not work for now since the code launches a separate window for the GUI, this appears to not be compatible with Binder.
+[Interactive code via Binder](https://mybinder.org/v2/gh/simonvw95/PrEd_force-directed/master)
 
 [PrEd algorithm source](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.)
 
