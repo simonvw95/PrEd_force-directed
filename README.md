@@ -15,22 +15,22 @@ The use of this project is to view the inner workings of the PrEd algorithm with
 1. Download Python from [site](https://www.python.org/downloads/).
 2. Install ensuring that "Add Python to PATH" and "PIP installation" are enabled.
 3. Open Command Prompt and enter the following command
-+`python -m venv [name_of_virtual_env_without_brackets]`
+..*`python -m venv [name_of_virtual_env_without_brackets]`
 4. Then in the same terminal activate the virtual environment
-+`[name_of_virtual_env_without_brackets]\Scripts\activate`
+..*`[name_of_virtual_env_without_brackets]\Scripts\activate`
 5. Then install the dependencies needed to run the scripts
-+`pip install -r requirements.txt`
+..*`pip install -r requirements.txt`
 
 ## Linux
 1. Run the following commands
-+`$ sudo apt install python3-distutils python3-dev python3-testresources subversion
+..*`$ sudo apt install python3-distutils python3-dev python3-testresources subversion
 $ wget https://bootstrap.pypa.io/get-pip.py
 $ sudo python3 get-pip.py
 $ python -m venv [name_of_virtual_env_without_brackets]`
 2. Then in the same terminal activate the virtual environment
-+`source [name_of_virtual_env_without_brackets]/bin/activate`
+..*`source [name_of_virtual_env_without_brackets]/bin/activate`
 3. Then install the dependencies needed to run the scripts
-+`pip install -r requirements.txt`
+..*`pip install -r requirements.txt`
 
 ## MACOS
 To be added
