@@ -4,6 +4,8 @@ The purpose of the PrEd algorithm is to adjust/improve the layout of existing gr
 
 The use of this project is to view the inner workings of the PrEd algorithm with the help of a Graphical User Interface (GUI), where users can visibly see the changes in the layout and manually go back through multiple iterations.
 
+Additionally, note that this is a side-project that has been abandoned. The main project I am working on has a plethora of dependencies issues and over 12 scripts that all rely on each other. For the scope of this course it would be too much.
+
 ![alt text](https://github.com/simonvw95/PrEd_force-directed/blob/master/results/figures/gui_example.png "GUI example")
 
 The Binder page does not work for now since the code launches a separate window for the GUI, this appears to not be compatible with Binder.
