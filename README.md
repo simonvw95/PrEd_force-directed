@@ -8,6 +8,8 @@ Additionally, note that this is a side-project that has been abandoned. The main
 
 ![alt text](https://github.com/simonvw95/PrEd_force-directed/blob/master/results/figures/gui_example.png "GUI example")
 
+[![DOI](https://sandbox.zenodo.org/badge/463079196.svg)](https://sandbox.zenodo.org/badge/latestdoi/463079196)
+
 The Binder page does not work for now since the code launches a separate window for the GUI, this appears to not be compatible with Binder.
 [Interactive code via Binder](https://mybinder.org/v2/gh/simonvw95/PrEd_force-directed/master)
 
