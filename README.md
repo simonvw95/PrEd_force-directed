@@ -24,9 +24,13 @@ The use of this project is to view the inner workings of the PrEd algorithm with
 ## Linux
 1. Run the following commands
 `$ sudo apt install python3-distutils python3-dev python3-testresources subversion
+
 $ wget https://bootstrap.pypa.io/get-pip.py
+
 $ sudo python3 get-pip.py
+
 $ python -m venv [name_of_virtual_env_without_brackets]`
+
 2. Then in the same terminal activate the virtual environment
 `source [name_of_virtual_env_without_brackets]/bin/activate`
 3. Then install the dependencies needed to run the scripts
