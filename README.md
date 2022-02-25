@@ -37,7 +37,8 @@ $ python -m venv [name_of_virtual_env_without_brackets]
 ```pip install -r requirements.txt```
 
 ## MACOS
-To be added
+1. Open Terminal and enter `python3 --version` to install the interpreter and other command line tools.
+2. Follow the Linux steps of installation.
 
 
 
