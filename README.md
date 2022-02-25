@@ -14,7 +14,11 @@ The Binder page does not work for now since the code launches a separate window 
 [Improved algorithm based on PrEd: ImPrEd](https://hal.inria.fr/inria-00605921/document)
 
 
+
 # Installing dependencies
+
+Start off with getting a local copy of the current repository 
+`$ git clone https://github.com/simonvw95/PrEd_force-directed.git`
 
 ## Windows
 1. Download Python 3.9.7 from [site](https://www.python.org/downloads/).
