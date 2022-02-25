@@ -14,7 +14,7 @@ The use of this project is to view the inner workings of the PrEd algorithm with
 # Installing dependencies
 
 ## Windows
-1. Download Python from [site](https://www.python.org/downloads/).
+1. Download Python 3.9.7 from [site](https://www.python.org/downloads/).
 2. Install ensuring that "Add Python to PATH" and "PIP installation" are enabled.
 3. Open Command Prompt and enter the following command
 ```python -m venv [name_of_virtual_env_without_brackets]```
