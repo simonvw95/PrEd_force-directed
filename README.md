@@ -66,7 +66,7 @@ $ python -m venv [name_of_virtual_env_without_brackets]
 ## Using the GUI
 In a terminal with the activated virtual environment (with the installed dependencies) write:
 
-`python gui.py`
+`python src/gui.py`
 
 The gui input parameters are required to be non-negative integers, exceptions will be thrown when this is not the case.
 If the program does not terminate after quitting the Quit Program button then exit the terminal and start it again.
