@@ -17,6 +17,8 @@ The Binder page does not work for now since the code launches a separate window 
 
 # Installing dependencies
 
+### For course participants, only `gui.py` has been modified as a result of the course's teachings.
+
 Start off with getting a local copy of the current repository 
 `$ git clone https://github.com/simonvw95/PrEd_force-directed.git`
 
