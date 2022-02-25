@@ -38,7 +38,16 @@ $ python -m venv [name_of_virtual_env_without_brackets]
 
 ## MACOS
 1. Open Terminal and enter `python3 --version` to install the interpreter and other command line tools.
-2. Follow the Linux steps of installation.
+2. Run the following commands
+```
+$ wget https://bootstrap.pypa.io/get-pip.py
+$ sudo python3 get-pip.py
+$ python -m venv [name_of_virtual_env_without_brackets]
+```
+2. Then in the same terminal activate the virtual environment
+```source [name_of_virtual_env_without_brackets]/bin/activate```
+3. Then install the dependencies needed to run the scripts using the requirements.txt file from this repository
+```pip install -r requirements.txt```
 
 
 
