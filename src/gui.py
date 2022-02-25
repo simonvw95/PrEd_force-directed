@@ -50,6 +50,7 @@ class App:
         self.root.focus()
         try:
             value = int(text)
+
             if value <= 0:
                 raise ValueError('Pick an integer value larger than 0')
             if ident == 'n':
@@ -72,14 +73,29 @@ class App:
             print(exc)
             print('An integer input is expected')
 
-    # function for displaying a node-link graph
+
     def display(self, pos, iteration = None, node = None):
 
+        """
+        Function for creating and displaying a figure of the graph drawing to the GUI
+
+        Input
+        pos:        dictionary, graph dictionary with nodes as keys and x, y coordinates in a list
+        Optional
+        iteration:  int, if supplied then the drawing of the specified iteration is displayed
+        node:       int/string, if supplied alongside iteration then the changed node is highlighted
+
+        Output
+        No variable is returned in the function, the function directly depicts the graph drawing to the GUI screen
+
+        """
+        
         figure, ax = plt.subplots(figsize = (600 / self.dpi, 600 / self.dpi), dpi = self.dpi)
 
         ax.tick_params(left = True, bottom = True, labelleft = True, labelbottom = True)
 
-        # if iteration and node are supplied as parameters then we want to display these parameters on the screen
+        # when these parameters are supplied then we want to showcase more information in the drawing
+        # adds a new title and highlighted node to the GUI
         if iteration and node:
             og_pos_node = self.updated_pos[node]
             curr_pos_node = pos[node]
@@ -99,10 +115,11 @@ class App:
         chart_type = FigureCanvasTkAgg(figure, self.root)
         chart_type.get_tk_widget().grid(row = 0, column = 3)
 
+        # need to close the plotted windows otherwise they remain in memory
         for i in range(len(plt.get_fignums()) - 1):
             plt.close(plt.get_fignums()[i])
 
-    # function for generating a random delaunay planar graph of n nodes 
+    # function for generating a random delaunay planar graph of n nodes, n is an entry value specified by the user
     def generate(self):
 
         g_dict = generate_single_delaunay(self.base_values['n'])
@@ -126,6 +143,7 @@ class App:
 
         if self.moves_back != 0:
             self.moves_back = 0
+
         # get the updated position of a node
         new_pos, old_pos = single_pred_gui(self.G, self.updated_pos, self.base_values['delta'], self.base_values['gamma'], self.nodes[i])
         self.updated_pos[self.nodes[i]] = new_pos
@@ -153,6 +171,7 @@ class App:
     # function for calculating the new positions of all nodes in the graph for multiple iterations
     def multiple_iterations(self):
 
+        # this is needed since we can't start doing iterations if we do not have a graph yet
         if hasattr(self, 'G'):
             self.counter = 0
 
@@ -184,6 +203,7 @@ class App:
         if hasattr(self, 'pos_changes_list'):
             if len(self.pos_changes_list) > 0:
                 self.moves_back -= 1
+
                 if -self.moves_back > len(self.pos_changes_list):
                     self.moves_back = -len(self.pos_changes_list)
                 self.move_back_forward()
@@ -230,6 +250,7 @@ def main(app_info):
     # entry for number of nodes in delaunay generation
     app_info.create_label(text = 'Number of nodes', row = 1, column = 0)
     app_info.create_entry(base_value = 10, row = 1, column = 1, ident = 'n')
+    
     app_info.create_button(text = 'Generate random delaunay planar graph', command = app_info.generate, row = 2, column = 0)
 
     app_info.create_label(text = 'Delta (desired edge length)', row = 3, column = 0)
