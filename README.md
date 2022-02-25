@@ -1,12 +1,12 @@
 # PrEd
 
-The purpose of the PrEd algorithm is to adjust/improve the layout of existing graph drawings. The algorithm takes as input a graph layout and moves nodes in a force-directed manner, similarly to standard force-directed graph layout algorithms. The key contribution of PrEd is that it respects edge-crossings, no new edge crossings will be created nor will existing edge crossings be removed.\
+The purpose of the PrEd algorithm is to adjust/improve the layout of existing graph drawings. The algorithm takes as input a graph layout and moves nodes in a force-directed manner, similarly to standard force-directed graph layout algorithms. The key contribution of PrEd is that it respects edge-crossings, no new edge crossings will be created nor will existing edge crossings be removed.
 
-The use of this project is to view the inner workings of the PrEd algorithm with the help of a Graphical User Interface (GUI), where users can visibly see the changes in the layout and manually go back through multiple iterations.\
+The use of this project is to view the inner workings of the PrEd algorithm with the help of a Graphical User Interface (GUI), where users can visibly see the changes in the layout and manually go back through multiple iterations.
 
-[PrEd algorithm source](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.)\
+[PrEd algorithm source](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.700.888&rep=rep1&type=pdf#:~:text=Abstract%20PrEd%20%5BBer00%5D%20is%20a,preserving%20its%20edge%20crossing%20properties.&text=The%20algorithm%20ensures%20that%20nodes%20do%20not%20cross%20edges%20during%20its%20execution.)
 
-[Improved algorithm based on PrEd: ImPrEd](https://hal.inria.fr/inria-00605921/document)\
+[Improved algorithm based on PrEd: ImPrEd](https://hal.inria.fr/inria-00605921/document)
 
 
 # Installing dependencies
@@ -39,9 +39,9 @@ To be added
 
 
 ## Using the GUI
-In a terminal with the activated virtual environment (with the installed dependencies) write:\
+In a terminal with the activated virtual environment (with the installed dependencies) write:
 
-`python gui.py`\
+`python gui.py`
 
 The gui input parameters are required to be non-negative integers, exceptions will be thrown when this is not the case.
 If the program does not terminate after quitting the Quit Program button then exit the terminal and start it again.
